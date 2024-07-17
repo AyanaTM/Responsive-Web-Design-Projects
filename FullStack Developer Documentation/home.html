@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>FullStack Developer Documentation</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>FullStack Developer Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#What_they_do">What they do</a></li>
+      <li><a class="nav-link" href="#Languages_Full_Stack_Developers_use">Languages Full Stack Developers use</a></li>
+      <li><a class="nav-link" href="#Front_end_vs_Back_end_vs_Full_Stack">Front end vs Back end vs Full Stack</a></li>
+      <li><a class="nav-link" href="#Full_Stack_Development_Advantages">Full Stack Development Advantages</a></li>
+      <li><a class="nav-link" href="#Example_Full_Stack_Project">Example Full Stack Project</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header><h2>Introduction</h2></header>
+      <p id="intro-subheading">What is a FullStack Developer?</p>
+      <p id="intro-info">A full-stack developer is a software engineer who has the ability to work on both the front-end (client-side) and back-end (server-side) components of a web application. They possess a deep understanding of the entire technology stack, allowing them to design, develop, and maintain complete web applications from start to finish.</p>
+      <p>Full-stack developers play a crucial role in the software development process, bridging the gap between the user interface and the underlying server-side logic. They are highly versatile and can adapt to various project requirements, making them valuable assets to both small startups and large enterprises.</p>
+    </section>
+    <section class="main-section" id="What_they_do">
+      <header><h2>What they do</h2></header>
+      <p class="paragraphs-1">Full stack developers have a wide range of responsibilities, including creating websites with a strong internal structure and providing an interactive interface to clients. They need to be proficient in HTML, CSS, and JavaScript for front-end development, as well as familiar with back-end technologies such as server-side languages, databases, and APIs.</p>
+      <p class="paragraphs-1">These professionals typically oversee a product from its inception to its launch, ensuring technical issues are addressed throughout the development process. They collaborate with design teams to conceptualize platforms, often refining prototypes before coding them. Additionally, they build databases and servers to support client-facing content, prioritize user experience, and troubleshoot issues.</p>
+      <p class="paragraphs-1">The best full stack developers stay updated on industry trends and emerging technologies to effectively meet their employers' needs and deliver high-quality, scalable web applications.</p>
+      <div id="responsibilities">
+      <p class="whattheydo">The everyday responsibilities of a Full stack Developer include:</p>
+      <ul class="whattheydo-list">
+        <li>Developing user interfaces using HTML, CSS, and JavaScript, including the use of front-end frameworks and libraries like React, Angular, or Vue.js.</li>
+        <li>Designing and implementing back-end logic using server-side languages such as Python, Ruby, Java, or Node.js.</li>
+        <li>Building and managing databases, including SQL and NoSQL databases, to store and retrieve data.</li>
+        <li>Developing and integrating RESTful APIs to facilitate communication between the front-end and back-end components.</li>
+        <li>Collaborating with designers, product managers, and other developers to ensure optimal user experience and application functionality.</li>
+        <li>Deploying and maintaining the web application in a production environment, often using cloud platforms or containerization tools.</li>
+      </ul>
+      </div>
+    </section>
+    <section class="main-section" id="Languages_Full_Stack_Developers_use">
+      <header><h2>Languages Full Stack Developers use</h2></header>
+      <p>FullStack Developers utilize a variety of programming languages and frameworks to build complete web applications. Some of the most common languages and technologies used by full-stack developers include:</p>
+      <ul>
+        <li>
+          <strong>JavaScript:</strong> The primary language for front-end web development, used for building interactive user interfaces. Full-stack developers often use JavaScript frameworks and libraries like React, Angular, or Vue.js.
+          <pre><code>// Example JavaScript code
+const fetchData = async () => {
+  try {
+    const response = await fetch('/api/data');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+};</code></pre>
+        </li>
+        <li>
+          <strong>Python:</strong> A versatile language used for back-end development, often with web frameworks like Django or Flask.
+          <pre><code># Example Python code
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/api/data', methods=['GET'])
+def get_data():
+    data = {'message': 'Hello, Full-Stack Developer!'}
+    return jsonify(data)
+
+if __name__ == '__main__':
+    app.run(debug=True)</code></pre>
+        </li>
+        <li>
+          <strong>Ruby:</strong> A dynamic language used for back-end development, often with the Ruby on Rails web framework.
+          <pre><code># Example Ruby on Rails code
+class DataController < ApplicationController
+  def index
+    data = { message: 'Hello, Full-Stack Developer!' }
+    render json: data
+  end
+end</code></pre>
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="Front_end_vs_Back_end_vs_Full_Stack">
+      <header><h2>Front end vs Back end vs Full Stack</h2></header>
+      <p>It's important to understand the differences between front-end, back-end, and full-stack development:</p>
+      <ul>
+        <li>
+          <strong>Front-end Developers:</strong>
+          <p>Focus on the user interface and user experience of a web application. They use HTML, CSS, and JavaScript to create the visual and interactive components that users see and interact with.</p>
+          <pre><code>// Example front-end code
+&lt;div class="hero"&gt;
+  &lt;h1&gt;Welcome to our website&lt;/h1&gt;
+  &lt;p&gt;Discover our amazing products&lt;/p&gt;
+  &lt;button&gt;Shop Now&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+        </li>
+        <li>
+          <strong>Back-end Developers:</strong>
+          <p>Work on the server-side logic, databases, and APIs. They use languages like Python, Ruby, or Java to build the underlying infrastructure and functionality of a web application.</p>
+          <pre><code># Example back-end code
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/api/products', methods=['GET'])
+def get_products():
+    products = [
+        {'id': 1, 'name': 'Product 1', 'price': 9.99},
+        {'id': 2, 'name': 'Product 2', 'price': 14.99},
+        {'id': 3, 'name': 'Product 3', 'price': 19.99}
+    ]
+    return jsonify(products)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+</code></pre>
+        </li>
+        <li>
+          <strong>Full stack Developers:</strong>
+          <p>Have skills in both front-end and back-end development, allowing them to work on the entire technology stack of a web application. They can create the user interface, build the server-side logic, and integrate the two components seamlessly.</p>
+          <pre><code>// Example full-stack code
+// Front-end (JavaScript)
+fetch('/api/products')
+  .then(response =&gt; response.json())
+  .then(data =&gt; {
+    // Render the products on the page
+    data.forEach(product =&gt; {
+      // Create HTML elements and update the DOM
+    });
+  });
+
+// Back-end (Python)
+from flask import Flask, jsonify
+app = Flask(__name__)
+
+@app.route('/api/products', methods=['GET'])
+def get_products():
+    products = [
+        {'id': 1, 'name': 'Product 1', 'price': 9.99},
+        {'id': 2, 'name': 'Product 2', 'price': 14.99},
+        {'id': 3, 'name': 'Product 3', 'price': 19.99}
+    ]
+    return jsonify(products)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+</code></pre>
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="Full_Stack_Development_Advantages">
+      <header><h2>Full Stack Development Advantages</h2></header>
+      <p>There are several advantages to being a full-stack developer:</p>
+      <ul>
+        <li>
+          <p><strong>Versatility:</strong> Full-stack developers have a broad skill set, allowing them to work on various aspects of a project, from design to deployment. This versatility makes them valuable assets to companies.</p>
+        </li>
+        <li>
+          <p><strong>Holistic Understanding:</strong> By understanding both front-end and back-end development, full-stack developers can make more informed decisions and create more cohesive and efficient web applications.</p>
+        </li>
+        <li>
+          <p><strong>Streamlined Development:</strong> Full-stack development reduces the need for multiple specialists, streamlining the development process and improving project coordination and communication.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="Example_Full_Stack_Project">
+      <header><h2>Example Full Stack Project</h2></header>
+      <p>To illustrate the versatility of a full-stack developer, let's consider a simple e-commerce web application:</p>
+      <ul>
+        <li>
+          <strong>Front-end:</strong>
+          <p>The front-end developer would use HTML, CSS, and JavaScript to create an attractive and user-friendly interface for the online store. They might utilize a framework like React or Angular to build reusable UI components and manage the application state.</p>
+          <pre><code>// Example front-end code (React)
+import React, { useState, useEffect } from 'react';
+
+const ProductList = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    // Fetch product data from the back-end API
+    fetch('/api/products')
+      .then(response =&gt; response.json())
+      .then(data =&gt; setProducts(data));
+  }, []);
+
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Our Products&lt;/h1&gt;
+      &lt;ul&gt;
+        {products.map(product =&gt; (
+          &lt;li key={product.id}&gt;
+            &lt;h3&gt;{product.name}&lt;/h3&gt;
+            &lt;p&gt;Price: ${product.price}&lt;/p&gt;
+            &lt;button&gt;Add to Cart&lt;/button&gt;
+          &lt;/li&gt;
+        ))}
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  );
+};
+
+export default ProductList;
+</code></pre>
+        </li>
+        <li>
+          <strong>Back-end:</strong>
+          <p>The back-end developer would create the server-side logic and API endpoints to handle product management, user authentication, and order processing. They might use a framework like Django or Flask (Python) to build the server and interact with a database to store product and user data.</p>
+          <pre><code># Example back-end code (Python, Flask)
+from flask import Flask, jsonify, request
+from database import Product, User, Order
+
+app = Flask(__name__)
+
+@app.route('/api/products', methods=['GET'])
+def get_products():
+    products = Product.query.all()
+    return jsonify([p.to_dict() for p in products])
+
+@app.route('/api/products', methods=['POST'])
+def create_product():
+    data = request.get_json()
+    product = Product(**data)
+    db.session.add(product)
+    db.session.commit()
+    return jsonify(product.to_dict()), 201
+
+# Additional endpoints for user authentication, orders, and more
+</code></pre>
+        </li>
+        <li>
+          <strong>Integration:</strong>
+          <p>As a full-stack developer, you would be responsible for integrating the front-end and back-end components, ensuring seamless communication between the user interface and the server-side logic. This might involve setting up API endpoints, handling data fetching and state management, and deploying the entire application to a production environment.</p>
+        </li>
+      </ul>
+      <p>By possessing skills in both front-end and back-end development, a full-stack developer can take ownership of the entire project, from design to deployment, and deliver a complete, high-quality web application.</p>
+    </section>
+  </main>
+</body>
+</html>
