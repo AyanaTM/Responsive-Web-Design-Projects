@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>SantyMental CS Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">SantyMental CS Survey Form</h1>
+    <p id="description">How was your experience with us?</p>
+
+   <form id="survey-form">
+
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name/Company Name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+
+        <label for="number" id="number-label">Cell/Work Number:</label>
+        <input type="number" id="number" name="number" placeholder="Enter your cell/work no." min="1" max="100" required>
+
+        <label for="dropdown">Type of Cleaning Service:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="">Select an option:</option>
+            <option value="1">Basic House Cleaning</option>
+            <option value="2">Deep Cleaning/Spring Cleaning</option>
+            <option value="3">Sanitization Services</option>
+            <option value="4">Upholstery Cleaning</option>
+            <option value="5">Office Cleaning</option>
+        </select>
+<fieldset>
+    <legend>Review our staff:</legend>
+       <table id="rating-table">
+        <tr>
+            <td></td>
+            <td>Very Satisfied</td>
+            <td>Satisfied</td>
+            <td>Neutral</td>
+            <td>Unsatisfied</td>
+            <td>Very Unsatisfied</td>
+        </tr>
+        <tr>
+            <td>Friendliness</td>
+            <td><input type="radio" name="friendliness" value="5"></td>
+            <td><input type="radio" name="friendliness" value="4"></td>
+            <td><input type="radio" name="friendliness" value="3"></td>
+            <td><input type="radio" name="friendliness" value="2"></td>
+            <td><input type="radio" name="friendliness" value="1"></td>
+        </tr>
+        <tr>
+            <td>Cleanliness</td>
+            <td><input type="radio" name="cleanliness" value="5"></td>
+            <td><input type="radio" name="cleanliness" value="4"></td>
+            <td><input type="radio" name="cleanliness" value="3"></td>
+            <td><input type="radio" name="cleanliness" value="2"></td>
+            <td><input type="radio" name="cleanliness" value="1"></td>
+        </tr>
+        <tr>
+            <td>Quickness</td>
+            <td><input type="radio" name="quickness" value="5"></td>
+            <td><input type="radio" name="quickness" value="4"></td>
+            <td><input type="radio" name="quickness" value="3"></td>
+            <td><input type="radio" name="quickness" value="2"></td>
+            <td><input type="radio" name="quickness" value="1"></td>
+        </tr>
+    </table>
+</fieldset>
+        <fieldset>
+    <legend>Rate your experience:</legend>
+    <div class="star-rating">
+        <input type="checkbox" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="checkbox" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="checkbox" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="checkbox" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="checkbox" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+</fieldset>
+        <fieldset>
+            <legend>Would you recommend our service?</legend>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="recommendation" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" id="maybe" name="recommendation" value="maybe" required>
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="no" name="recommendation" value="no" required>
+                <label for="no">No</label>
+            </div>
+        </fieldset>
+
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+  </body>
+</html>
